@@ -1,0 +1,22 @@
+{
+  "name": "dh-heroes",
+  "version": "1.0.0",
+  "description": "Server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cronos550m/DH-Heroes.git"
+  },
+  "author": "Sergio Cordoba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cronos550m/DH-Heroes/issues"
+  },
+  "homepage": "https://github.com/cronos550m/DH-Heroes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
