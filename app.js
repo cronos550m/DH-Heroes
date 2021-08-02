@@ -1,6 +1,7 @@
 const express = require('express');
 const server = express();
 const path = require('path');
+server.use(express.static('public'));
 
 
 server.listen(3030,()=>{
@@ -10,9 +11,9 @@ server.listen(3030,()=>{
 server.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'./views/index.html'))
 })
-// server.get('/home',(req,res)=>{
-//     res.sendFile(path.join(__dirname,'./views/index.html'))
-// })
+server.get('/home',(req,res)=>{
+    res.sendFile(path.join(__dirname,'./views/index.html'))
+})
 server.get('/babbage',(req,res)=>{
     res.sendFile(path.join(__dirname,'./views/babbage.html'))
 })
